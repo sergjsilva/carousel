@@ -15,7 +15,6 @@ function nextButtonClickHandler(){
     if(currentSlider>lastSlider){
         currentSlider=0;
     }
-    console.log("Current = ",currentSlider);
     slider.forEach((image, index)=>image.style.transform=`translateX(${(index-currentSlider)*100}%)`);
 }
 
@@ -24,7 +23,6 @@ function prevButtonClickHandler(){
     if(currentSlider<0){
         currentSlider=lastSlider;
     }
-    console.log("Current = ",currentSlider);
     slider.forEach((image, index)=>image.style.transform=`translateX(${(index-currentSlider)*100}%)`);
 }
 
